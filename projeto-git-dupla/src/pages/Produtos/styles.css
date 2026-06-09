@@ -1,0 +1,139 @@
+:root {
+    --bg-primary: #fbf9f6;
+    --text-main: #2d3732;
+    --text-muted: #606f66;
+    --accent-color: #557a66;
+    --accent-hover: #436151;
+    --card-bg: #ffffff;
+    --radius-large: 24px;
+    --radius-small: 12px;
+    --shadow-soft: 0 10px 30px rgba(85, 122, 102, 0.05);
+}
+
+.products-container {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    min-height: 100vh;
+    padding: 140px 20px 60px 20px;
+    /* Margem superior para a Navbar não cobrir o texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-hero {
+    text-align: center;
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+
+.products-badge {
+    background-color: rgba(85, 122, 102, 0.1);
+    color: var(--accent-color);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.products-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    /* Segurança contra sobreposição de texto */
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.products-subtitle {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* Layout em Grelha (Cards) */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.product-card {
+    background-color: var(--card-bg);
+    padding: 35px 30px;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(85, 122, 102, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Mantém o botão sempre no fundo do card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(85, 122, 102, 0.1);
+}
+
+.product-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.product-description {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    /* Garante o alinhamento mesmo se o texto for curto */
+}
+
+/* Rodapé do Card com Preço e Botão */
+.product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(85, 122, 102, 0.08);
+    padding-top: 20px;
+}
+
+.product-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.product-button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: var(--radius-small);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.product-button:hover {
+    background-color: var(--accent-hover);
+}
+
+@media (max-width: 768px) {
+    .products-title {
+        font-size: 2rem;
+    }
+}

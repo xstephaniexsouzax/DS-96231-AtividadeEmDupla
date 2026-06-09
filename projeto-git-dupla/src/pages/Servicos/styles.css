@@ -1,0 +1,134 @@
+:root {
+    --bg-primary: #fbf9f6;
+    --text-main: #2d3732;
+    --text-muted: #606f66;
+    --accent-color: #557a66;
+    --card-bg: #ffffff;
+    --radius-large: 24px;
+    --radius-small: 12px;
+    --shadow-soft: 0 10px 30px rgba(85, 122, 102, 0.05);
+}
+
+.services-container {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    min-height: 100vh;
+    /* Aumentamos um pouco o padding do topo para garantir que a Navbar não cubra o texto */
+    padding: 140px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-hero {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+/* CORREÇÃO DO BUG DA IMAGEM */
+.services-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    /* Isso impede que as linhas se sobreponham quando o texto quebrar */
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.services-subtitle {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.services-list {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.service-item {
+    background-color: var(--card-bg);
+    padding: 40px 30px;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(85, 122, 102, 0.05);
+    text-align: center;
+    /* Alinha o conteúdo interno do card, combinando com seu layout atual */
+}
+
+.service-info h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-info p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.service-tag {
+    display: inline-block;
+    background-color: rgba(85, 122, 102, 0.1);
+    color: var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Seção de Informações do Rodapé */
+.info-section {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.info-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-box {
+    background-color: rgba(85, 122, 102, 0.04);
+    padding: 30px;
+    border-radius: var(--radius-large);
+    text-align: left;
+    border: 1px solid rgba(85, 122, 102, 0.02);
+}
+
+.info-box h4 {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+    color: var(--accent-color);
+}
+
+.info-box p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 2rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
