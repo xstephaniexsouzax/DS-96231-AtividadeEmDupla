@@ -1,0 +1,48 @@
+.header-container {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Estilização do Logótipo/Título */
+.header-logo h2 {
+  font-size: 24px;
+  color: #333333;
+  margin: 0 0 15px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-logo h2 span {
+  color: #5d7a68; /* Tom verde correspondente ao botão do site */
+  font-weight: 400;
+}
+
+/* Menu de Navegação - Responsável por separar as palavras */
+.menu-navegacao {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Estilo individual de cada Link do Menu */
+.menu-navegacao a {
+  display: inline-block;
+  text-decoration: none;
+  color: #666666;
+  font-weight: 500;
+  font-size: 16px;
+  
+  /* Margem nas laterais de cada palavra para criar o espaçamento perfeito */
+  margin: 0 15px; 
+  
+  /* Transição suave para quando o rato passar por cima */
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o rato por cima dos links (Hover) */
+.menu-navegacao a:hover {
+  color: #5d7a68; /* Muda para o verde do tema */
+  transform: translateY(-2px); /* Pequeno efeito de flutuação */
+}
