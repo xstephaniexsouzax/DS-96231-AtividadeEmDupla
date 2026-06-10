@@ -4,7 +4,7 @@ function Footer() {
 	return (
 		<footer className="footer-container">
 			<div className="footer-inner">
-				<p>© {new Date().getFullYear()} Contabilidade Online — Todos os direitos reservados.</p>
+				<p>© {new Date().getFullYear()} Psicologia Online — Todos os direitos reservados.</p>
 			</div>
 		</footer>
 	);
