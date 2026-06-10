@@ -25,7 +25,7 @@ function Produtos() {
                         para ajudar-te a acalmar a mente e gerir crises no dia a dia.
                     </p>
                     <div className="product-footer">
-                        <span className="product-price">14,90€</span>
+                        <span className="product-price">R$ 14,90</span>
                         <button className="product-button">Adquirir E-book</button>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ function Produtos() {
                         melhorar o foco e proporcionar uma noite de sono mais reparadora.
                     </p>
                     <div className="product-footer">
-                        <span className="product-price">19,90€</span>
+                        <span className="product-price">R$ 19,90</span>
                         <button className="product-button">Aceder aos Áudios</button>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ function Produtos() {
                         compreender e acolher as nossas emoções de forma saudável.
                     </p>
                     <div className="product-footer">
-                        <span className="product-price">29,90€</span>
+                        <span className="product-price">R$ 29,90</span>
                         <button className="product-button">Garantir Vaga</button>
                     </div>
                 </div>
