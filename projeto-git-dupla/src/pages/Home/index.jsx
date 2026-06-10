@@ -12,7 +12,9 @@ function Home() {
                     superar a ansiedade e reconectar-se com você mesmo. Atendimentos confidenciais,
                     focados no seu bem-estar emocional, de forma presencial ou online.
                 </p>
-                <button className="cta-button">Agendar uma Consulta</button>
+                <div className="hero-actions">
+                    <button className="cta-button">Agendar uma Consulta</button>
+                </div>
             </section>
 
             {/* Seção de Cards de Especialidades */}

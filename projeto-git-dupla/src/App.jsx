@@ -1,25 +1,25 @@
-import './App.css';
-import Home from './pages/Home/index';
-import Servicos from './pages/Servicos/index';
-import Produtos from './pages/Produtos/index';
-import { Route } from 'react-router-dom';
-import { Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Produtos from './pages/Produtos';
+import Servicos from './pages/Servicos';
 
 function App() {
-  <>
-    {/* O Header fica fixo no topo em todas as páginas */}
-    <Header />
+  return (
+    <>
+      <Header />
 
-    {/* O gerenciador de rotas decide qual página exibir no meio */}
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/produtos" element={<Produtos />} />
-      <Route path="/servicos" element={<Servicos />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/servicos" element={<Servicos />} />
+      </Routes>
 
-    {/* O Footer fica fixo no rodapé em todas as páginas */}
-    <Footer />
-  </>
+      <Footer />
+    </>
+  );
 }
 
-  export default App;
+export default App;
